@@ -1,0 +1,2 @@
+export const UNPACKED_ITEMS = "UNPACKED_ITEMS";
+export const PACKED_ITEMS = "PACKED_ITEMS";
