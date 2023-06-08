@@ -1,17 +1,7 @@
 import Form from "./components/Form";
 import Grid from "./components/Grid";
-import { useItemsDispatchContext } from "./context/ItemsContext";
-import { CHANGE_ALL_TO_UNPACKED } from "./context/actionTypes";
 
 function App() {
-  const dispatch = useItemsDispatchContext();
-
-  const onMarkAllUnpackedBtnClick = () => {
-    dispatch({
-      type: CHANGE_ALL_TO_UNPACKED,
-    });
-  };
-
   return (
     <div className="flex justify-center mt-20 text-sm sm:text-base">
       <div
@@ -32,7 +22,6 @@ function App() {
           <button
             className="border-2 border-purple-300 rounded w-full px-2 py-1 bg-purple-100 sm:px-4 sm:py-2"
             type="button"
-            onClick={onMarkAllUnpackedBtnClick}
           >
             Mark All as Unpacked
           </button>

@@ -21,7 +21,7 @@ export default function InputField({ id, onValueChange, value }) {
         name={id}
       />
 
-      {value.length > 0 && (
+      {value?.length > 0 && (
         <button
           className="absolute top-2 right-2"
           type="button"
